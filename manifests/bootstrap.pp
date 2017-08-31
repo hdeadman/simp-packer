@@ -47,14 +47,14 @@ if $enable_ks {
     group  => 'apache',
     source => "file://${copied_path}/pupclient_x86_64.cfg",
   }
-  file { '/etc/puppet/environments/simp/modules/site/manifests/tftpboot.pp':
+  file { '/etc/puppetlabs/code/environments/simp/modules/site/manifests/tftpboot.pp':
     ensure => file,
     mode   => '0640',
     owner  => 'root',
     group  => 'puppet',
     source => "file://${copied_path}/tftpboot.pp",
   }
-  file { '/etc/puppet/autosign.conf':
+  file { '/etc/puppetlabs/code/autosign.conf':
     ensure => file,
     mode   => '0640',
     owner  => 'root',

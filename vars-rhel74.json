@@ -1,0 +1,10 @@
+
+{
+    "box_distro_release": "SIMP-6.0",
+    "box_simp_release": "6.0.X",
+    "iso_checksum": "ee1a06f7984e4156043d5eb60ecbbdf3db608d1a80ba3887ba89d372b250ab73527585e349ed23065e00ee66ed1a53edb38040f93cf3fe5d425973a0332c578e",
+    "iso_checksum_type": "sha512",
+    "iso_url": "./SIMP-6.0.0-RC1-Powered-By-CentOS-7.0-x86_64.iso",
+    "new_password": "suP3rP@ssw0r!9371",
+    "output_directory": "./OUTPUT"
+}

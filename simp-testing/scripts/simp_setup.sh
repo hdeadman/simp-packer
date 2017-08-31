@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-export PATH=$PATH:/opt/puppetlabs/bin
+export PATH=$PATH:/opt/puppetlabs/puppet/bin
 chown -R root:puppet /var/local/simp/manifests
 chmod -R g+rX /var/local/simp/manifests
 
