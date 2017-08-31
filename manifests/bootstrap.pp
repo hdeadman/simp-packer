@@ -2,7 +2,7 @@ $enable_named = true
 $enable_dhcp  = true
 $enable_ks    = true
 
-$rsync_path  = '/var/simp/rsync/CentOS/7'
+$rsync_path  = '/var/simp/environments/simp/rsync/CentOS/7'
 $copied_path = '/var/local/simp/files'
 
 if $enable_dhcp {
