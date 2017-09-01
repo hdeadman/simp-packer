@@ -2,11 +2,11 @@ $enable_named = true
 $enable_dhcp  = true
 $enable_ks    = true
 
-$rsync_path  = '/var/simp/environments/simp/rsync/CentOS/7'
+$rsync_path  = '/var/simp/environments/simp/rsync'
 $copied_path = '/var/local/simp/files'
 
 if $enable_dhcp {
-  file { "${rsync_path}/dhcpd/dhcpd.conf":
+  file { "${rsync_path}/RedHat/Global/dhcpd/dhcpd.conf":
     ensure => file,
     owner  => 'root',
     group  => 'root',
@@ -16,7 +16,7 @@ if $enable_dhcp {
 }
 
 if $enable_named {
-  $bind_path = "${rsync_path}/bind_dns/default/named"
+  $bind_path = "${rsync_path}/CentOS/7/bind_dns/default/named"
   File {
     ensure  => file,
     mode    => '0640',
