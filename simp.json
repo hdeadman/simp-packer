@@ -99,6 +99,11 @@
         "echo vagrant | passwd vagrant --stdin",
         "echo puppet | passwd root --stdin",
         "echo 'vagrant ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers",
+        "wget --no-check-certificate -O authorized_keys 'https://github.com/mitchellh/vagrant/raw/master/keys/vagrant.pub'",
+        "mkdir -p /home/vagrant/.ssh",
+        "mv authorized_keys /home/vagrant/.ssh",
+        "chown -R vagrant:vagrant /home/vagrant/.ssh",
+        "chmod -R go-rwsx /home/vagrant/.ssh",      
         "#puppet apply -e 'include site::vagrant'",
         "chmod g+rX -R /home/vagrant"
       ]
